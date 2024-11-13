@@ -1,0 +1,10 @@
+services:
+  rakutech:
+    container_name: rakutech
+    image: node:12.22-alpine
+    working_dir: /var/www/app
+    volumes:
+      - .:/var/www/app:delegated
+    ports:
+      - 3005:3005
+    tty: true
